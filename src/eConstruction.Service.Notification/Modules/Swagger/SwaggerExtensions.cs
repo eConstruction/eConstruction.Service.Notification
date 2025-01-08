@@ -21,19 +21,6 @@ namespace eConstruction.Service.Notification.Modules.Swagger
                 {
                     Version = "Version .Net 9.0.x",
                     Title = "Swagger UI Personalized .Net 9",
-                    Description = " Thanks for sharing.",
-                    TermsOfService = new Uri(""),
-                    Contact = new OpenApiContact
-                    {
-                        Name = "",
-                        Url = new Uri("")
-                    },
-
-                    License = new OpenApiLicense
-                    {
-                        Name = "",
-                        Url = new Uri("")
-                    }
                 });
 
                 // form 2 to generate the swagger documentation
