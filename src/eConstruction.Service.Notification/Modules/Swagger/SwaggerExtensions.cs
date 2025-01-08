@@ -22,17 +22,17 @@ namespace eConstruction.Service.Notification.Modules.Swagger
                     Version = "Version .Net 9.0.x",
                     Title = "Swagger UI Personalized .Net 9",
                     Description = " Thanks for sharing.",
-                    TermsOfService = new Uri("https://cvmendozacr.com/"),
+                    TermsOfService = new Uri(""),
                     Contact = new OpenApiContact
                     {
-                        Name = "Ing. Javier Mendoza Blandón and Ing. Edson Martinez Zuniga",
-                        Url = new Uri("https://sigemapro.com/autores.html")
+                        Name = "",
+                        Url = new Uri("")
                     },
 
                     License = new OpenApiLicense
                     {
-                        Name = "For capacitation and reference use.",
-                        Url = new Uri("https://example.com/license")
+                        Name = "",
+                        Url = new Uri("")
                     }
                 });
 
