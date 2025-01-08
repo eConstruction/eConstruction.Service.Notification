@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\eConstruction.Service.Notification.props" />
+</Project>

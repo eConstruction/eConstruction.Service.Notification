@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nswag", "nswag", "{7CFF8BCE-394F-404C-9279-4829F0BC65FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packing", "packing", "{0945E284-A2CF-4944-A452-67351735BCB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "typescript-client", "typescript-client", "{C894B04E-643C-4803-A642-AFDC30C577F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5BF86FC8-B038-48D7-8F98-4B0D6607FC14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projectfiles", "projectfiles", "{AE3CDE30-4A35-4BE6-829D-A8EF58FAAE68}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eConstruction.Service.Notification", "src\eConstruction.Service.Notification\eConstruction.Service.Notification.csproj", "{D38C1ABC-5E48-4AC0-85F7-DE249F70CB23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D38C1ABC-5E48-4AC0-85F7-DE249F70CB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38C1ABC-5E48-4AC0-85F7-DE249F70CB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38C1ABC-5E48-4AC0-85F7-DE249F70CB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38C1ABC-5E48-4AC0-85F7-DE249F70CB23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C894B04E-643C-4803-A642-AFDC30C577F7} = {0945E284-A2CF-4944-A452-67351735BCB8}
+		{D38C1ABC-5E48-4AC0-85F7-DE249F70CB23} = {5BF86FC8-B038-48D7-8F98-4B0D6607FC14}
+	EndGlobalSection
+EndGlobal

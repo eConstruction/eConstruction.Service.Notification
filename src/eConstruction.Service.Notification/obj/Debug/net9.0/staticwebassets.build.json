@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "llilry6m+pAMpPwDB5HfZjnkQaf8lpjQ/c0+8mciswc=",
+  "Source": "eConstruction.Service.Notification",
+  "BasePath": "_content/eConstruction.Service.Notification",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

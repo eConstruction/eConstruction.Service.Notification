@@ -1,0 +1,6 @@
+@eConstruction.Service.Notification_HostAddress = http://localhost:5022
+
+GET {{eConstruction.Service.Notification_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eConstruction.Service.Notification</name>
+    </assembly>
+    <members>
+        <member name="T:eConstruction.Service.Notification.Modules.Swagger.SwaggerExtensions">
+            <summary>
+            SwaggerExtensions extensions
+            </summary>
+        </member>
+        <member name="M:eConstruction.Service.Notification.Modules.Swagger.SwaggerExtensions.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            AddSwagger method.
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
