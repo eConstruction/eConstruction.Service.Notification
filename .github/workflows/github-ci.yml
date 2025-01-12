@@ -9,7 +9,7 @@ on:
       - main  # Trigger the workflow on pull requests to the main branch
 
 jobs:
-  build-auth:
+  build:
     runs-on: ubuntu-latest
     outputs:
       image_tag: ${{ steps.set_tag.outputs.image_tag }}  # Output the image tag to be used in the next job
@@ -29,7 +29,7 @@ jobs:
         docker build -t ${{ steps.set_tag.outputs.image_tag }} -f Dockerfile .
 
   push-to-ecr:
-    needs: build-auth
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -46,7 +46,11 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
+    - name: Build image
+      run: |
+        docker build -t ${{ steps.login-ecr.outputs.registry }}/${{ needs.build.outputs.image_tag }} -t ${{ steps.login-ecr.outputs.registry }}/econstruction-notification:latest -f Dockerfile .
+        
     - name: Push the Image to Amazon ECR
       run: |
-        docker build -t ${{ steps.login-ecr.outputs.registry }}/${{ needs.build-auth.outputs.image_tag }} -f Dockerfile .
-        docker push ${{ steps.login-ecr.outputs.registry }}/${{ needs.build-auth.outputs.image_tag }}
+        docker push ${{ steps.login-ecr.outputs.registry }}/${{ needs.build.outputs.image_tag }}
+        docker push ${{ steps.login-ecr.outputs.registry }}/econstruction-notification:latest
