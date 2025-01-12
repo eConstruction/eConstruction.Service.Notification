@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace eConstruction.Service.Notification.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
     [ApiExplorerSettings(GroupName = "v1")]
+    [Route("api/v1/notifications/")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -28,7 +28,7 @@ namespace eConstruction.Service.Notification.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetNotificationWeatherForecast")]
+        [HttpGet]
         public IEnumerable<WeatherForecast> GetNotificationWeatherForecast()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
